@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+  @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+  @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+  @font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* Css init */
+html{
+  width:100%;
+}
+body {
+  background-color: #1F2124 !important;
+  word-break: keep-all;
+  margin: 0;
+  padding: 0; 
+  width:100%;
+  color:#333;
+  /* font-family: 'NanumSquare', sans-serif !important; */
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
-#nav {
-  padding: 30px;
+p {
+  margin: 0px !important;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* Css init */
 </style>
